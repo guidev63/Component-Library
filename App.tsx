@@ -27,7 +27,7 @@ export default function App() {
         />
       {
       fontsLoaded ? 
-      <Text>Home</Text> 
+      <Text>Home Home Home </Text> 
       : 
       <View />
       }
