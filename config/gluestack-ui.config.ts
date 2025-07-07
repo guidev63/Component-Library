@@ -152,9 +152,9 @@ export const gluestackUIConfig = createConfig({
       green200: '#bbf7d0',
       green300: '#86efac',
       green400: '#4ade80',
-      green500: '#22c55e',
-      green600: '#16a34a',
-      green700: '#15803d',
+      green500: "#00B37E",
+      green600: "#16a34a",
+      green700: '#00875F',
       green800: '#166534',
       green900: '#14532d',
       lime50: '#f7fee7',
@@ -202,11 +202,18 @@ export const gluestackUIConfig = createConfig({
       red200: '#fecaca',
       red300: '#fca5a5',
       red400: '#f87171',
-      red500: '#ef4444',
+      red500: '#F75A68',
       red600: '#dc2626',
       red700: '#b91c1c',
       red800: '#991b1b',
       red900: '#7f1d1d',
+      gray100: "#E1E1E6",
+      gray200: "#C4C4CC",
+      gray300: "#7C7C8A",
+      gray400: "#323238",
+      gray500: "#29292E",
+      gray600: "#202024",
+      gray700: "#121214",
       warmGray50: '#fafaf9',
       warmGray100: '#f5f5f4',
       warmGray200: '#e7e5e4',
@@ -537,8 +544,8 @@ export const gluestackUIConfig = createConfig({
       extraBlack: '950',
     },
     fonts: {
-      heading: undefined,
-      body: undefined,
+    heading: 'Roboto_700Bold',
+    body: 'Roboto_400Regular',
       mono: undefined,
     },
     fontSizes: {
@@ -705,14 +712,14 @@ export const componentsConfig = createComponents(componentsTheme);
 
 export type { UIConfig, UIComponents } from '@gluestack-ui/themed';
 
-export interface IConfig {}
-export interface IComponents {}
+export interface IConfig { }
+export interface IComponents { }
 
 declare module '@gluestack-ui/themed' {
-  interface UIConfig extends Omit<Config, keyof IConfig>, IConfig {}
+  interface UIConfig extends Omit<Config, keyof IConfig>, IConfig { }
   interface UIComponents
     extends Omit<Components, keyof IComponents>,
-      IComponents {}
+    IComponents { }
 }
 
 export const config = {

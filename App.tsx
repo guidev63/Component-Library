@@ -7,7 +7,7 @@ import {
 
 import { GluestackUIProvider, Text, Center } from "@gluestack-ui/themed";
 
-import { config } from "@gluestack-ui/config";
+import { config } from "./config/gluestack-ui.config";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,7 +23,7 @@ export default function App() {
         translucent
       />
       {fontsLoaded ? (
-        <Center flex={1} bg="$info600">
+        <Center flex={1} bg="$gray900">
           <Text>Home</Text>
         </Center>
       ) : (
