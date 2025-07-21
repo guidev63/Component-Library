@@ -18,7 +18,7 @@ export function SignIn() {
             <Center my="$24">
                 <Logo />
                 <Text color="$gray100" fontSize="$sm">
-                    Treine Sua Mente e o seu Corpo.
+                    Treine sua mente e o seu Corpo.
                 </Text>
             </Center>
         </VStack>
