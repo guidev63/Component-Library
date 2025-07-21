@@ -1,8 +1,8 @@
-import { VStack, Image, Center } from "@gluestack-ui/themed";
+import { VStack, Image, Text, Center, Heading } from "@gluestack-ui/themed";
 
 import BackgroundImage from "@assets/background.png"
 import Logo from "@assets/logo.svg"
-import { Text } from "react-native-svg";
+import  {Input} from "@components/Input"
 export function SignIn() {
     return (
         <VStack flex={1} bg="$gray700">
@@ -18,8 +18,12 @@ export function SignIn() {
             <Center my="$24">
                 <Logo />
                 <Text color="$gray100" fontSize="$sm">
-                    Treine sua mente e o seu Corpo.
+                    Treine Sua mente e o Seu Corpo.
                 </Text>
+            </Center>
+            <Center gap="$2">
+                <Heading color="$gray100"> Acesse A Conta </Heading>
+                <Input />
             </Center>
         </VStack>
     )
