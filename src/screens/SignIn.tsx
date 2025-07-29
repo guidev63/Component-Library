@@ -17,16 +17,21 @@ export function SignIn() {
             />
             <VStack flex={1} px="$10">
                 <Center my="$24">
-                    <Logo />
+                    <Logo 
+                    />
                     <Text color="$gray100" fontSize="$sm">
                         Treine Sua mente e o Seu Corpo.
                     </Text>
                 </Center>
+
                 <Center gap="$2">
                     <Heading color="$gray100"> Acesse A Conta </Heading>
                     <Input placeholder="E-mail"
+                      keyboardType="email-address"
+                      autoCapitalize="none"
                     />
-                    <Input placeholder="Senha"    
+                    <Input placeholder="Senha" 
+                    secureTextEntry
                     />
                 </Center>
             </VStack>
