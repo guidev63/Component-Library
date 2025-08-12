@@ -23,7 +23,7 @@ export function SignUp() {
                     <Logo
                     />
                     <Text color="$gray100" fontSize="$sm">
-                        Treine Sua mente e o Seu Corpo.
+                        Treine Sua Mente e o Seu Corpo.
                     </Text>
                 </Center>
                 <Center gap="$2" flex={1}>
